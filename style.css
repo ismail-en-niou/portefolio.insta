@@ -120,7 +120,7 @@ span{
 {
     position: relative;
     top: 0;
-    width: 10vw;
+    width: 20vw;
     filter: drop-shadow(10px 8px 6px #747072);
     animation: floatImage 4s ease-in-out infinite;
 }

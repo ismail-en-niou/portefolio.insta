@@ -10,16 +10,15 @@
 html{
     font-size: 62.5%;
     overflow-x:hidden;
-    background: transparent;
 }
 body{
-    
+    background:#1C1E1D;
 }
 section
 {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
-
+    overflow: hidden;
 }
 .header{
     position: fixed;
@@ -187,13 +186,15 @@ span{
     .image img {
        display: none;
     };
-
+    .home-content 
+    {
+        font-size: 10px;
+    }
     .header{
         padding: 2rem 3%;
     }
     section{
         padding: 10rem 3% 2rem;
-        margin: auto;
     }
 }
 @media(max-width:768px){
@@ -209,7 +210,9 @@ span{
     {
         width: 20vw;
     }
-
+     .about-content img {
+        width: 7vw;
+     }
 .navbar{
     position: absolute;
     top: 100%;
@@ -259,6 +262,9 @@ span{
     html{
         font-size: 50%;
     }
+    .about-content img {
+        width: 10vw;
+     }
 }
 @media (max-width : 350px ){
     .home-img img {

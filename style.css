@@ -256,13 +256,14 @@ span{
     html{
         font-size: 50%;
     }
+    .about-content img {
+        width: 50vw;
+    }
 }
 @media (max-width : 350px ){
     .home-img img {
         width: 90vw;
     }
-    .about-img img {
-        width: 90vw;
-    }
+    
     
 }

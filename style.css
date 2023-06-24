@@ -257,12 +257,12 @@ span{
         font-size: 50%;
     }
     .about-content img {
-        width: 50vw;
+        width: 30vw;
     }
 }
 @media (max-width : 350px ){
     .home-img img {
-        width: 90vw;
+        width: 80vw;
     }
     
     

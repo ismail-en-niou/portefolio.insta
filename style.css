@@ -30,7 +30,7 @@ section
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1;
 }
 .header .stiky
 {
@@ -48,16 +48,7 @@ section
     margin-left: 4rem;
     transition: .3s;
 }
-#menu-icon
-{
-    display: none;
-}
-#menu-icon{
-    font-size: 3.6rem;
-    color:#fff;
-    display: none;
 
-}
 .navbar a:hover,
 .navbar a.active{
   color: #FFFFFF;
@@ -65,6 +56,11 @@ section
   border-radius: 15px;
   padding-left: 12px;
   padding-right: 12px;
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color:#fff;
+    display: none;
 }
 .image img
 {
@@ -199,12 +195,10 @@ span{
 }
 @media(max-width:768px){
     #menu-icon{
+   
         display: block;
-    }
-
-    .navbar
-    {
-       display: none;
+        color: #fff;
+        z-index: 10;
     }
     .home-content .biba
     {
@@ -238,7 +232,7 @@ span{
 .home-content
 {
     position: relative;
-    left: 7rem;
+    left: 1.5rem;
 }
 .home-content h3{
     font-size: 2.6rem
@@ -262,7 +256,6 @@ span{
     html{
         font-size: 50%;
     }
-    
 }
 @media (max-width : 350px ){
     .home-img img {

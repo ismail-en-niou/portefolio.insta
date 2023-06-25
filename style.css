@@ -12,7 +12,7 @@ html{
     overflow-x:hidden;
 }
 body{
-    background:#1C1E1D;
+    background:#242424;
 }
 section
 {
@@ -32,10 +32,7 @@ section
     align-items: center;
     z-index: 1;
 }
-.header .stiky
-{
-    border-bottom: .1rem solid rgba(0,0,0,.2);
-}
+
 
 .navbar
 {
@@ -65,22 +62,24 @@ section
 .image img
 {
     position: relative;
-    left: -15rem;
+    left: -8rem;
 }
 .home
 {
     display:flex;
     justify-content: center;
     align-items: center;
-    background: #1C1E1D;
+    background: #242424;
 }
 .home-content
 {
     position: relative;
-    left: -10rem;
+    left: -5rem;
 }
 .home-img img
 {
+    position: relative;
+    left: 8rem;
     width: 35vw;
 }
 .home-content h3{
@@ -109,6 +108,56 @@ span{
     margin-top: 15px;
 
 }
+
+.btn:hover{
+    box-shadow: none;
+}
+.btn {
+    margin-top: 13.5rem;
+    color: #000000;
+    font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+    text-align: center;
+    /* img size is 50x50 */
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC) repeat 0 0;
+    
+    animation: bg-scrolling-reverse 0.92s infinite;
+    animation-timing-function: linear;
+  }
+  .btn{
+    position: absolute;
+    bottom: 0;
+    left: 30rem;
+    padding: 8px;
+    padding-left: 3rem;
+    padding-right:3rem ;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #747072;
+    color:#1C1E1D;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    transition: .5s ease;
+}
+  @keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+  @media (max-width : 991px){
+      .image img {
+         display: none;
+      };
+      .home-content 
+      {
+          font-size: 10px;
+      }
+      .header{
+          padding: 2rem 3%;
+      }
+      section{
+          padding: 10rem 3% 2rem;
+      }
+  }
 .about
 {
     display:flex;
@@ -155,7 +204,7 @@ span{
 .imk li a:hover
 {
     filter: drop-shadow(10px 9px 8px #1c1c1c);
-    transition:7s ease all;
+    transition:9s ease all;
     transform: scale(.9) translateY(-5%);
 }
 @import url(https://fonts.googleapis.com/css?family=Exo:100);
@@ -262,7 +311,7 @@ span{
 }
 @media (max-width : 350px ){
     .home-img img {
-        width: 80vw;
+        width: 90vw;
     }
     
     

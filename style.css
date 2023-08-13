@@ -9,16 +9,16 @@
 }
 html{
     font-size: 62.5%;
-    overflow-x:hidden;
 }
 body{
-    background:#242424;
+    background:#fffefe;
 }
 section
 {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
     overflow: hidden;
+    margin:0;
 }
 .header{
     position: fixed;
@@ -133,22 +133,17 @@ span{
     border-radius: 4rem;
     box-shadow: 0 0 1rem #747072;
     color:#1C1E1D;
+   
     font-size: 1.6rem;
     letter-spacing: .1rem;
     font-weight: 700;
     transition: .5s ease;
 }
-@keyframes bg-scrolling-reverse {
-    0% {
-        background-position: -40px -40px;
-      }
-      50% {
-        background-position: 40px 40px;
-      }
-  100% {
-    background-position: -40px -40px;
+  @keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 50px 50px;
+    }
   }
-
   @media (max-width : 991px){
       .image img {
          display: none;
@@ -176,21 +171,9 @@ span{
     position: relative;
     top: 0;
     width: 20vw;
-    filter: drop-shadow(10px 8px 6px #747072);
-    animation: floatImage 4s ease-in-out infinite;
+    animation: floatImage 4s ease-in-out infinite
 }
-@keyframes  floatImage
-{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-2.4rem)
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
+
 .imk ul
 {
     list-style: none;
@@ -216,15 +199,14 @@ span{
 
 
 .about {
-  margin-top: 13.5rem;
-  color: #999;
+  margin-top: 0;
+  color: #000000;
   font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
   text-align: center;
   /* img size is 50x50 */
-  background: url("5309843771871049235_121 5.png") repeat 0 0;
+  background: url("5309843771871049235_121_5-removebg-preview.png") repeat 0 0;
   
-  animation: bg-scrolling-reverse 10s  infinite;
-  animation-timing-function: linear;
+ 
 }
 
 @keyframes bg-scrolling-reverse {
@@ -326,4 +308,46 @@ span{
     }
     
     
+}
+.services{
+    background: url("5309843771871049235_121_5-removebg-preview.png");
+}
+
+
+.services {
+    margin-left: 0;
+    padding-left: 0;
+   
+}
+
+ .services .container div {
+    float: left;
+    width: 20rem;
+    margin: 5rem;
+    border: #000000 solid 2px;
+   align-items: center;
+   justify-content: space-around;
+    padding: 8rem;
+    text-align: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.services .container div  img
+{
+    height: 40px;
+     width: 40px;
+    position: relative;
+    top: -3rem;    
+}
+
+.services .container div p 
+{
+    font-size: x-large;
+    font-weight: 800;
+    position: relative;
+    top: 100%;
+    left: -50%;
+   
 }
